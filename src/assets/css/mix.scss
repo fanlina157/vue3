@@ -1,0 +1,236 @@
+/* element-ui样式覆盖 */
+
+.el-table{
+  font-size: 16px;
+}
+
+
+/* table height */
+.directoryManageTabe .el-table th,
+.el-table tr {
+  height: 54px;
+}
+.directoryManageTabe .el-button--medium{
+  font-size: 100%;
+}
+.supervis-wrap .el-tabs__header {
+  margin: 0px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.tat-c-container .el-tabs__item {
+  height: 50px;
+  line-height: 50px;
+  width: 100px;
+  text-align: center;
+}
+
+// 版本对比 弹出层内容和title的上下间距调整
+.contrast-container .el-dialog__body {
+  padding: 5px 20px;
+}
+
+.contrast-container input :disabled {
+  color: red;
+}
+.children-from .el-date-editor.el-input{
+   width: inherit;
+}
+
+// .form .el-row{
+//   margin-left: 0px !important;
+//   margin-right: 0px !important;
+// }
+// .form .el-input{
+//   padding-right: 20px;
+// }
+// .form .el-form-item__label{
+//   text-align: left !important;
+// }
+.form .el-input__inner{
+  height: 36px !important;
+}
+li.el-menu-item {
+  padding-left: 35px !important;
+  font-size: 18px !important;
+}
+div.el-submenu__title {
+  font-size: 18px !important;
+  padding-left: 35px !important;
+  .el-submenu__icon-arrow.el-icon-arrow-down {
+    color: #FFFFFF !important;
+  }
+}
+ul.el-menu.el-menu--inline li.el-menu-item{
+  padding-left: 45px !important;
+  font-size: 16px !important;
+  color: #BBD3FF !important;
+}
+ul.el-menu.el-menu--inline div.el-submenu__title{
+  padding-left: 45px !important;
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+ul.el-menu.el-menu--inline ul.el-menu.el-menu--inline li.el-menu-item{
+  padding-left: 55px !important;
+  font-size: 14px;
+  color: #BBD3FF !important;
+}
+ul.el-menu.el-menu--inline ul.el-menu.el-menu--inline li.el-menu-item.is-active{
+  color: #1A64EA !important;
+}
+ul.el-menu.el-menu--inline li.el-menu-item.is-active{
+  color: #1A64EA !important;
+}
+li.el-menu-item.is-active {
+  background-color: #B8D1FF !important;
+}
+.el-menu {
+  border: none;
+}
+
+ul.el-menu.el-menu--inline li.el-menu-item {
+color: #BBD3FF !important;
+}
+
+ul.el-menu.el-menu--inline li.el-menu-item.is-active {
+color: #1A64EA !important;
+}
+
+li.el-menu-item.is-active {
+background-color: #B8D1FF;
+}
+
+.el-menu {
+border: none;
+}
+
+.dates{
+  .input{
+    .el-input__prefix{
+      left: 0px;
+    }
+    .el-input--prefix,.el-input__inner{
+      padding-left: 20px !important;
+    }
+    .el-input--suffix,.el-input__inner{
+      padding-right: 20px !important;
+    }
+  }
+}
+.content{
+  .el-badge__content,.is-fixed{
+    top:10px;
+    right: 15px;
+    border-radius: 50%;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+.el-input.is-disabled .el-input__inner{
+  color: #000 !important;
+}
+.mainWrapper-scroll{
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.mainWrapper{
+  // height: 100%;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  .checked-button{
+     margin-left: 5px;
+  }
+  // overflow: auto;
+  .submit{
+    button{
+      // padding: 15px;
+    }
+    span{
+      vertical-align: unset;
+      
+    }
+  }
+  .ivu-form{
+    .ivu-form-item-label{
+      font-size: 14px;
+      // min-width: 100px;
+      // padding-left: 8px;
+    }
+  }
+}
+// 全局disabled框字体大小颜色
+.el-input.is-disabled .el-input__inner{
+  color: #333333;
+  font-size: 14px;
+}
+.el-textarea.is-disabled .el-textarea__inner{
+  color: #333333;
+  font-size: 14px;
+}
+.el-radio__input.is-disabled+span.el-radio__label{
+  color: #333333;
+  font-size: 14px;
+}
+.el-checkbox__input.is-disabled+span.el-checkbox__label{
+  color: #333333;
+  font-size: 14px;
+}
+.el-checkbox__input.is-disabled.is-checked .el-checkbox__inner{
+  background-color: #409EFF;
+}
+.el-select .el-tag{
+  color: #333333;
+  font-size: 14px;
+}
+// 表单输入框字体大小
+.el-input--small .el-input__inner{
+  color: #333333;
+  font-size: 14px;
+}
+// 实施清单录入子项列表颜色
+.child_wapper{
+  .el-table th{
+    // background: #3a80ff !important;
+    background: #409EFF !important;
+  }
+}
+.implement{
+  .el-form-item__label{
+    font-size: 16px;
+  }
+}
+
+
+.mainwrapper .el-form-item--small .el-form-item__label{
+  line-height: 62px !important;
+}
+.mainwrapper .main-person .el-form-item--small .el-form-item__label{
+  line-height: 48px !important;
+}
+.mainwrapper .el-form-item--small .el-form-item__content{
+  line-height: 48px !important;
+}
+.mainwrapper{
+  .titleBar{
+    font-size: 18px !important;
+  }
+  .el-form-default{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+    margin-top: 5%;
+    position: relative;
+    right: 10px;
+       label{
+         font-size: 18px;
+       }
+       input {
+         height: 42px;
+       }
+    }
+  }
+}

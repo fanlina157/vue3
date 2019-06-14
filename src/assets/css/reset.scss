@@ -1,0 +1,153 @@
+@import './mix';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: Microsoft YaHei;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent; // 点击移动端阴影
+    -webkit-touch-callout: none;
+    // -webkit-user-select: none;
+    // user-select:none;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -webkit-text-size-adjust: none; // chrome字体最小12px兼容
+  font-family: Microsoft YaHei;
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+  }
+}
+:focus {
+    outline: 0
+}
+ol, ul {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ""
+}
+input, textarea ,button{
+    margin: 0;
+    padding: 0;
+    display: block;
+    caret-color:#ff6920;// 设置光标颜色
+    color: #333333;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    font-family: Microsoft YaHei;
+}
+hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #000;
+    background-color: #000;
+    height: 1px
+}
+
+// 设置placeholder颜色
+input::-webkit-input-placeholder{
+    color:#bbb;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#bbb;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#bbb;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#bbb;
+}
+// 去掉内外阴影
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;  // 去掉number类型的箭头
+}
+// 光标聚焦时palceholder不显示
+/* WebKit browsers */
+input:focus::-webkit-input-placeholder { color:transparent; }
+/* Mozilla Firefox 4 to 18 */
+input:focus:-moz-placeholder { color:transparent; }
+
+/* Mozilla Firefox 19+ */
+input:focus::-moz-placeholder { color:transparent; }
+
+/* Internet Explorer 10+ */
+input:focus:-ms-input-placeholder { color:transparent; }
+// 聚焦时候改变input样式 因为这边的input外边还有一层 所以不能直接用
+// input:focus{
+//     border:1px solid red !important;
+// }
+
+// a标签
+a {
+    text-decoration: none;
+    outline: 0;
+    color: black;
+}
+a:hover {
+    text-decoration: none
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.overFlow {
+  overflow-y: auto;
+}
+.overFlow::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+.overFlow::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 5px;
+  background: lightgrey;
+}
+.overFlow::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: rgba(0,0,0,0.1);
+}
+.light:hover{
+  background-color: #409EFF !important;
+  color: #ffffff !important;
+  border: 1px solid #409EFF !important;
+}
