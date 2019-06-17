@@ -19,7 +19,7 @@
                 <i class="el-icon-location"></i>
                 <span>table</span>
             </template>
-            <el-menu-item index="dynamicTable">动态table</el-menu-item>
+            <el-menu-item index="/table/dynamicTable">动态table</el-menu-item>
             <el-menu-item index="dragTable">拖拽table</el-menu-item>
             <el-menu-item index="editTable">编辑table</el-menu-item>
             <el-menu-item index="complexTable">综合table</el-menu-item>
