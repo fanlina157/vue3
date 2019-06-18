@@ -1,7 +1,7 @@
 <template>
-    <div>
-      
-    </div>
+  <div class="createPost-container">
+
+  </div>
 </template>
 
 <script>

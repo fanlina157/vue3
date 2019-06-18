@@ -29,6 +29,12 @@ export default new Router({
   // mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // 登录
+    {
+      path: '/login',
+      component: () => import('@/views/login/index'),
+      hidden: true
+    },
     // 首页
     {
       path: '/',
