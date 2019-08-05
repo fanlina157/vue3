@@ -32,7 +32,7 @@ export default new Router({
     // 登录
     {
       path: '/login',
-      component: () => import('@/views/login/index'),
+      component: () => import('@/views/login/login'),
       hidden: true
     },
     // 首页
@@ -182,6 +182,27 @@ export default new Router({
           component: () => import(/* webpackChunkName: "about" */ './views/artical/articalList.vue'),
           meta: {
             title: '文章列表'
+          }
+        }
+      ]
+    },
+    // tree
+    {
+      path: '/tree',
+      name: 'tree',
+      component: Layout,
+      redirect: '/tree/lazytree',
+      meta: {
+        title: 'tree',
+        icon: 'tree'
+      },
+      children: [
+        {
+          path: 'lazytree',
+          name: 'lazytree',
+          component: () => import(/* webpackChunkName: "about" */ './views/tree/lazytree.vue'),
+          meta: {
+            title: 'lazytree'
           }
         }
       ]

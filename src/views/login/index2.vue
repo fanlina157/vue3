@@ -30,27 +30,27 @@
 <script>
 export default {
   name: 'Login',
-  data() {
+  data () {
     return {
       loginForm: {
         username: '',
         password: ''
       },
       loginRules: {
-        username: [{ required: true, trigger: 'blur', message:'请输入用户名！' }],
+        username: [{ required: true, trigger: 'blur', message: '请输入用户名！' }],
         password: [
-          { required: true, trigger: 'blur', message:'请输入密码！'  },
+          { required: true, trigger: 'blur', message: '请输入密码！' },
           { min: 6, message: '密码最少6个字符！', trigger: 'blur' }
         ]
       },
       passwordType: 'password',
       capsTooltip: false,
-      loading: false,
+      loading: false
     }
   },
   watch: {
   },
-  mounted() {
+  mounted () {
     if (this.loginForm.username === '') {
       this.$refs.username.focus()
     } else if (this.loginForm.password === '') {

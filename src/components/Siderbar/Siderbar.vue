@@ -43,6 +43,13 @@
             <el-menu-item index="/artical/createArtical">创建文章</el-menu-item>
             <el-menu-item index="/artical/articalList">文章列表</el-menu-item>
         </el-submenu>
+          <el-submenu index="/tree">
+            <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>tree</span>
+            </template>
+            <el-menu-item index="/tree/lazytree">lazytree</el-menu-item>
+        </el-submenu>
     </el-menu>
 </div>
 </template>
